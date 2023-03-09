@@ -12,11 +12,12 @@ $paragraph_nobadwords = str_replace($bad_word, '***', $paragraph);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Badwords</title>
 </head>
 <body>
-    <h1>No bad words</h1>
-    <h2>Il paragrafo inviato è lungo <?= $paragraph_length ?> caratteri. Quello censurato è lungo: <?=strlen($paragraph_nobadwords) ?> caratteri</h2>
-    <p>Paragrafo censurato: <?= $paragraph_nobadwords ?></p>
+    <h1>Risultato</h1>
+    <p>Il paragrafo inviato è lungo <strong><?= $paragraph_length ?></strong> caratteri. Quello censurato è lungo: <strong><?=strlen($paragraph_nobadwords) ?></strong> caratteri</p>
+    <p><strong>Paragrafo originale:</strong> <?=$paragraph?>
+    <p><strong>Paragrafo censurato:</strong> <?= $paragraph_nobadwords ?></p>
 </body>
 </html>
